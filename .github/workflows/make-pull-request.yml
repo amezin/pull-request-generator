@@ -17,18 +17,18 @@ jobs:
       - run: echo "$GITHUB_RUN_ID" >run-id.txt
 
       - id: commit
-        uses: amezin/create-commit-action@main
+        uses: amezin/create-commit-action@v1
         with:
           message: Auto-generated commit
           files: run-id.txt
 
-      - uses: amezin/create-or-update-git-ref-action@main
+      - uses: amezin/create-or-update-git-ref-action@v1
         with:
           ref: refs/heads/auto-generated
           sha: ${{ steps.commit.outputs.sha }}
           force: true
 
-      - uses: amezin/create-or-update-pull-request-action@main
+      - uses: amezin/create-or-update-pull-request-action@v1
         with:
           title: Auto-generated Pull Request
           head: auto-generated
