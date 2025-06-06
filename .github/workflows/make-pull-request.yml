@@ -17,7 +17,7 @@ jobs:
       - run: echo "$GITHUB_RUN_ID" >run-id.txt
 
       - id: commit
-        uses: amezin/create-commit-action@269d75cce74e10d8711cae407b1c4d45533ade71 # v1
+        uses: amezin/create-commit-action@36e15a93b30ae4f274e010f98db8eb856d3bd818 # v1
         with:
           message: Auto-generated commit
           files: run-id.txt
