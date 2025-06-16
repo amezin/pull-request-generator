@@ -28,7 +28,7 @@ jobs:
           sha: ${{ steps.commit.outputs.sha }}
           force: true
 
-      - uses: amezin/create-or-update-pull-request-action@cef951ec6ae545fc08107d4bebcc5dbf78ebacff # v1
+      - uses: amezin/create-or-update-pull-request-action@55147022c19d0e0269ef4d9a089cfc813f7cb3e8 # v1
         with:
           title: Auto-generated Pull Request
           head: auto-generated
