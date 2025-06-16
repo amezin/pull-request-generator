@@ -1,4 +1,11 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:best-practices"]
+  "extends": ["config:best-practices"],
+  "packageRules": [
+    {
+      "extends": ["helpers:pinGitHubActionDigests"],
+      "versioning": "npm",
+      "rangeStrategy": "pin"
+    }
+  ]
 }
