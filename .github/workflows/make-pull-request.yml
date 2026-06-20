@@ -22,7 +22,7 @@ jobs:
           message: Auto-generated commit
           files: run-id.txt
 
-      - uses: amezin/create-or-update-git-ref-action@9c82c89a00ab473475437f4b496db14be1768dc2 # v2.0.0
+      - uses: amezin/create-or-update-git-ref-action@289103670796998ab617ee819d9dd967bbaedb0b # v2.0.3
         with:
           ref: refs/heads/auto-generated
           sha: ${{ steps.commit.outputs.sha }}
