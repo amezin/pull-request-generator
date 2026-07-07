@@ -22,13 +22,8 @@ jobs:
           message: Auto-generated commit
           files: run-id.txt
 
-      - uses: amezin/create-or-update-git-ref-action@289103670796998ab617ee819d9dd967bbaedb0b # v2.0.3
-        with:
-          ref: refs/heads/auto-generated
-          sha: ${{ steps.commit.outputs.sha }}
-          force: true
-
       - uses: amezin/create-or-update-pull-request-action@0abe94508b600c8b5d8d4977ec0fd4e88abf7cb2 # v2.1.0
         with:
           title: Auto-generated Pull Request
           head: auto-generated
+          head_sha: ${{ steps.commit.outputs.sha }}

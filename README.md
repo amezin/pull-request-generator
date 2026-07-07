@@ -16,6 +16,4 @@ It is implemented by combining together:
 
 - https://github.com/amezin/create-commit-action
 
-- https://github.com/amezin/create-or-update-git-ref-action
-
 - https://github.com/amezin/create-or-update-pull-request-action
